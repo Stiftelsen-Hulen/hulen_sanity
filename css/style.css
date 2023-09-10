@@ -1,0 +1,58 @@
+
+
+
+
+
+
+
+
+.div-dark button {
+    background-color: #1a1919;
+}
+
+.div-dark span {
+    background-color: #1a1919;
+}
+
+.div-dark div {
+    background-color: #1a1919;
+}
+
+.div-dark > div:nth-child(1) > div:nth-child(1)  > div:nth-child(1)  > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) :hover div {
+    background-color: #383636;
+}
+
+.div-dark > div:nth-child(1) > div:nth-child(1)  > div:nth-child(1)  > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) :hover span {
+    background-color: #383636;
+    font-style: normal;
+}
+
+.div-dark > div:nth-child(1) > div:nth-child(1)  > div:nth-child(1)  > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) :hover button {
+    background-color: #383636;
+}
+
+
+.div-light div button {
+    background-color: #e7e0e0;
+}
+
+.div-light div span {
+    background-color: #e7e0e0;
+}
+
+.div-light div div {
+    background-color: #e7e0e0;
+}
+
+.div-light > div:nth-child(1) > div:nth-child(1)  > div:nth-child(1)  > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) :hover div {
+    background-color: #faf2f2;
+}
+
+.div-light > div:nth-child(1) > div:nth-child(1)  > div:nth-child(1)  > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) :hover span {
+    background-color: #faf2f2;
+    font-style: normal;
+}
+
+.div-light > div:nth-child(1) > div:nth-child(1)  > div:nth-child(1)  > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) :hover button {
+    background-color: #faf2f2;
+}
