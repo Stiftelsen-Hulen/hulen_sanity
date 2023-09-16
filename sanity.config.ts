@@ -38,6 +38,30 @@ const localeString = {
   }))
 }
 
+const localeBlock = {
+  title: 'Localized BlockContent',
+  name: 'localeBlock',
+  type: 'object',
+  // Fieldsets can be used to group object fields.
+  // Here we omit a fieldset for the "default language",
+  // making it stand out as the main field.
+  fieldsets: [
+    {
+      title: 'Translations',
+      name: 'translations'
+    }
+  ],
+  // Dynamically define one field per language
+  fields: supportedLanguages.map(lang => ({
+    title: lang.title,
+    name: lang.id,
+    type: 'array',
+    of: [{type: 'block'}],
+    fieldset: lang.isDefault ? null : 'translations',
+    validation: (rule: Rule) => rule.required()
+  }))
+}
+
 
 export default defineConfig({
   name: 'default',
@@ -53,6 +77,6 @@ export default defineConfig({
   ), visionTool(), documentI18n(i18nConfig)],
 
   schema: {
-    types: [localeString, ...schemaTypes]
+    types: [localeString,localeBlock, ...schemaTypes]
   }
 })

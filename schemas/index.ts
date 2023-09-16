@@ -1,3 +1,4 @@
+import footer from "./footer.ts/footer";
 import navBar from "./navigation/navBar";
 import navElement from "./navigation/navElement";
 import notFound from "./notFound/notFound";
@@ -8,5 +9,6 @@ export const schemaTypes = [
     navBar,
     navElement,
     pageContent,
-    notFound
+    notFound,
+    footer,
 ]
