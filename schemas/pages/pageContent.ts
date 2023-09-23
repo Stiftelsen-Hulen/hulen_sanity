@@ -4,19 +4,18 @@ export default {
     title: 'Page',
     name: 'pageProps',
     type: 'document',
-    fields: [{
-        description: "",
-        type: 'array',
-        name: "blockContent",
-        of: [
-            {
-                type: 'block'
+    fields: [
+        {
+            type: "string", 
+            name: "title", 
+            title: "Page Name",
+            description: "This field is used to match Hulen.No page routing and need to match exactly the page config"
             },
-            {
-                type: 'image'
-            }
-        ]
-
+        {
+        description: "The content you wish to show",
+        type: 'localeBlock',
+        name: "locale",
+   
     }]
 
 

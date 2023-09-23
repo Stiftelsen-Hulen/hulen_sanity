@@ -56,10 +56,30 @@ const localeBlock = {
     title: lang.title,
     name: lang.id,
     type: 'array',
-    of: [{type: 'block'}],
+    of: [{type: 'block'}, {type: 'localeImage'}],
     fieldset: lang.isDefault ? null : 'translations',
     validation: (rule: Rule) => rule.required()
   }))
+}
+
+const localeImage = {
+  title: "Localized Image",
+  name: 'localeImage',
+  type: 'object',
+  fields:[ {
+    title: 'image',
+    name: 'Image',
+    type: 'image',
+  },{
+    type: "string",
+    name: "altText",
+    description: "Accessabillity text describing the image"
+  },
+{type: 'string',
+description: 'Adding a url here will transform the entire image into a clickable link. If linking internally (at hulen.no), you only need to add f.ex "/contactUs". If linking externally, you need the full https://google.com type link',
+name: "linkUrl",
+}]
+
 }
 
 
@@ -77,6 +97,6 @@ export default defineConfig({
   ), visionTool(), documentI18n(i18nConfig)],
 
   schema: {
-    types: [localeString,localeBlock, ...schemaTypes]
+    types: [localeString,localeBlock,localeImage, ...schemaTypes]
   }
 })
