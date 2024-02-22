@@ -1,8 +1,10 @@
 import contactPage from './contactPage/contactPage'
-import footer from './footer.ts/footer'
+import footer from './footer/footer'
 import benefitsSection from './joinUsPage/benefitsSection'
 import joinSection from './joinUsPage/joinSection'
 import joinUsPage from './joinUsPage/joinUsPage'
+import positionButtons from './joinUsPage/positionButtons'
+import positionDescriptionSection from './joinUsPage/positionDescriptionSection'
 import positionEl from './joinUsPage/positionEl'
 import navBar from './navigation/navBar'
 import navElement from './navigation/navElement'
@@ -28,4 +30,6 @@ export const schemaTypes = [
   positionType,
   techCategory,
   techInfo,
+  positionButtons,
+  positionDescriptionSection,
 ]

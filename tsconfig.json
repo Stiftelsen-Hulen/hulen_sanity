@@ -15,7 +15,7 @@
       "jsx": "preserve",
       "incremental": true
     },
-    "include": ["**/*.ts", "**/*.tsx"],
+    "include": ["**/*.ts", "**/*.tsx", "schemas/footer"],
     "exclude": ["node_modules"]
   }
   

@@ -1,16 +1,16 @@
-import { Rule } from "sanity";
+import {Rule} from 'sanity'
 
 export default {
   title: 'Join Us',
   name: 'joinUsPage',
   type: 'document',
   fields: [
-   {
-      type: "string", 
-      name: "title", 
+    {
+      type: 'string',
+      name: 'title',
       title: 'title',
-      description: 'title of object, for storage purposes only'
-   },
+      description: 'title of object, for storage purposes only',
+    },
     {
       type: 'localeString',
       name: 'pageTitle',
@@ -22,8 +22,21 @@ export default {
       description: 'The ingress of the page. The introductory text at the top',
       type: 'localeBlock',
       title: 'Ingress',
-      name: 'field',
+      name: 'ingress',
       validation: (rule: Rule) => rule.required(),
+    },
+    {
+      title: 'Navigation Buttons',
+      name: 'navigationButtons',
+      description: 'Clickable navigation button, be careful when touching these',
+      type: 'array',
+      of: [{type: 'joinUsNavButton'}],
+    },
+    {
+      title: 'positionDescription',
+      type: 'positionPreface',
+      description: 'Info text before positions are listed',
+      name: 'positionPreface',
     },
     {
       type: 'array',
@@ -37,11 +50,12 @@ export default {
       name: 'benefitsSection',
       title: 'Benefits Section',
       validation: (rule: Rule) => rule.required(),
-    }, {
+    },
+    {
       type: 'joinUsSection',
       name: 'joinSection',
       title: 'Join Section',
       validation: (rule: Rule) => rule.required(),
-    }
+    },
   ],
 }
