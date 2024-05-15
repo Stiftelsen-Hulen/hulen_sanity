@@ -1,4 +1,4 @@
-import {Rule} from 'sanity'
+import { Rule } from 'sanity'
 
 export default {
   title: 'Position Description section',
@@ -17,6 +17,12 @@ export default {
       name: 'content',
       title: 'Content',
       validation: (rule: Rule) => rule.required(),
+    },
+    {
+      type: 'image',
+      image: 'icon',
+      name: 'descImage',
+      description: 'The icon to display. Please only upload svg icons here',
     },
   ],
 }
