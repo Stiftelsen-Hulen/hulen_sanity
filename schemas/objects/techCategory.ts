@@ -12,9 +12,9 @@ export default {
     {
       type: 'array',
       title: 'Entries',
-      name: 'enteries',
+      name: 'entries',
       description: 'Insert whatever you need here',
-      of: [{type: 'string'}],
+      of: [{ type: 'string' }],
     },
   ],
 }
