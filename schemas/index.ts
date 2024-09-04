@@ -14,6 +14,7 @@ import positionType from './objects/positionType'
 import techCategory from './objects/techCategory'
 import pageContent from './pages/pageContent'
 import techInfo from './techInfo/techInfo'
+import translationObjects from './translationObject/translationObject'
 
 export const schemaTypes = [
   navBar,
@@ -30,6 +31,7 @@ export const schemaTypes = [
   positionType,
   techCategory,
   techInfo,
+  translationObjects,
   positionButtons,
   positionDescriptionSection,
 ]
