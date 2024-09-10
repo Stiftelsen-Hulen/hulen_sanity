@@ -82,6 +82,17 @@ name: "linkUrl",
 
 }
 
+const imageWithLocaleAlt = {
+    type: 'image',
+    name: 'imageWithLocaleAlt',
+    title: 'Image',
+    fields: [{
+      name: "altText",
+      type: "localeString",
+      description: "Accessibility text describing the image"
+    }]
+}
+
 
 export default defineConfig({
   name: 'default',
@@ -97,6 +108,6 @@ export default defineConfig({
   ), visionTool(), documentI18n(i18nConfig)],
 
   schema: {
-    types: [localeString,localeBlock,localeImage, ...schemaTypes]
+    types: [localeString,localeBlock,localeImage, imageWithLocaleAlt, ...schemaTypes]
   }
 })
