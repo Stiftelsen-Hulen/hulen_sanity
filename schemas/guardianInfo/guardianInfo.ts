@@ -29,14 +29,10 @@ export default {
       title: 'Description',
       description: 'The text below the subheading and beside the image'
     }, {
-      type: 'image',
+      type: 'imageWithLocaleAlt',
       name: 'guardianImage',
       title: 'Image',
       description: 'The image beside the text',
-      fields: [{
-        name: "altText",
-        type: "localeString",
-      }]
     }
   ],
 }
