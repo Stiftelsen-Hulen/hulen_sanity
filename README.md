@@ -14,7 +14,12 @@ It is recommended to use Node Version Manager (NVM) to do this, for more info on
    ```bash
    npm install
    ```
-4. Create a `.env` file in the root directory and add the environment variables.
+4. Steps to create the .env file with environment variables
+   - Copy the `.env.example` file
+      ```bash
+         cp .env.example .env
+      ```
+   - Edit the `.env` file and replace the placeholders with the appropriate credentials. SANITY_STUDIO_PROJECT_ID is found by logging in to [Sanity.io](https://www.sanity.io), navigate to the **Projects**, select the **Hulen** project and copy the **PROJECT ID**.
 5. Run the project
    ```bash
    npm run dev
