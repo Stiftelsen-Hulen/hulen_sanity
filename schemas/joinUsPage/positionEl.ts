@@ -33,16 +33,16 @@ export default {
       validation: (rule: Rule) => rule.required(),
     },
     {
-      type: 'image',
+      type: 'imageWithLocaleAlt',
       name: 'descImage',
       title: 'Decorative Image',
       description:
-        'While you can put an image into the above description, it is easier controlled to but it here',
+        'While you can put an image into the above description, it is easier controlled to put it here',
     },
   ],
   preview: {
     select: {
-        title: 'title.en',
-    }
-  }
+      title: 'title.en',
+    },
+  },
 }
