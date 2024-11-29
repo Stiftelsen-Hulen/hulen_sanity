@@ -15,18 +15,12 @@ export default {
       name: 'navbarLogo',
       description:
         'Logo element that appear on top of Hulen.no in the navbar. The Alt text is for screen readers and such.',
-      fields: [
-        {
-          name: 'altText',
-          type: 'localeString',
-        },
-      ],
     },
     {
       type: 'array',
       title: 'Navigation Buttons',
       name: 'navElements',
-      of: [{type: 'navElement'}],
+      of: [{ type: 'navElement' }],
     },
   ],
 }
