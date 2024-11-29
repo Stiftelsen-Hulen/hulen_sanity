@@ -1,4 +1,4 @@
-import {Rule} from 'sanity'
+import { Rule } from 'sanity'
 
 export default {
   title: 'Position',
@@ -19,8 +19,8 @@ export default {
       description: 'Which category to put the position in, either night shift or normal shift',
       options: {
         list: [
-          {title: 'Night Shift', value: 'night_shift'},
-          {title: 'Outside regular hours', value: 'outside_regular'},
+          { title: 'Night Shift', value: 'night_shift' },
+          { title: 'Outside regular hours', value: 'outside_regular' },
         ],
       },
       validation: (rule: Rule) => rule.required(),
