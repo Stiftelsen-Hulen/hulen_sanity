@@ -1,4 +1,4 @@
-import { Rule } from 'sanity'
+import {Rule} from 'sanity'
 
 export default {
   title: 'Join Us',
@@ -30,13 +30,7 @@ export default {
       name: 'navigationButtons',
       description: 'Clickable navigation button, be careful when touching these',
       type: 'array',
-      of: [{ type: 'joinUsNavButton' }],
-    },
-    {
-      type: 'joinUsSection',
-      name: 'joinSection',
-      title: 'Join Section',
-      validation: (rule: Rule) => rule.required(),
+      of: [{type: 'joinUsNavButton'}],
     },
     {
       title: 'positionDescription',
@@ -49,12 +43,18 @@ export default {
       title: 'Available Positions',
       description: 'Each available position',
       name: 'positions',
-      of: [{ type: 'positionEl' }],
+      of: [{type: 'positionEl'}],
     },
     {
       type: 'benefitsSection',
       name: 'benefitsSection',
       title: 'Benefits Section',
+      validation: (rule: Rule) => rule.required(),
+    },
+    {
+      type: 'joinUsSection',
+      name: 'joinSection',
+      title: 'Join Section',
       validation: (rule: Rule) => rule.required(),
     },
   ],
