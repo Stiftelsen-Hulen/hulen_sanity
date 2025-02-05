@@ -4,8 +4,12 @@ export default {
   type: 'object',
   title: 'Join email form',
   name: 'joinEmailForm',
-  fieldsets: [{ name: 'joinFormLabels', title: 'Email Form\'s Input Labels' }],
   fields: [
+    {
+      type: 'email',
+      name: 'destinationEmailAddress',
+      validation: (rule: Rule) => rule.required(),
+    },
     {
       type: 'localeString',
       name: 'emailFormTitle',
