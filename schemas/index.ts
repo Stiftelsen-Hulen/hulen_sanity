@@ -16,6 +16,7 @@ import pageContent from './pages/pageContent'
 import techInfo from './techInfo/techInfo'
 import translationObjects from './translationObject/translationObject'
 import guardianInfo from './guardianInfo/guardianInfo'
+import joinEmailForm from './joinUsPage/joinEmailForm'
 
 export const schemaTypes = [
   navBar,
@@ -27,6 +28,7 @@ export const schemaTypes = [
   dictionaryContactInfo,
   positionEl,
   benefitsSection,
+  joinEmailForm,
   joinSection,
   joinUsPage,
   positionType,
