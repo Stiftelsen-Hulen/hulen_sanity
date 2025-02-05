@@ -59,6 +59,31 @@ Object with an image and altText.
 
 Image with altText for each language.
 
+## Deploying code & scheme changes
+When new code changes and schemes have been merged to the code base it does not go live immediately. You need to be logged in with the sanity CLI and use it to deploy the changes.
+
+1. Install sanity CLI: See sanity's [docs](https://www.sanity.io/docs/cli).
+```bash
+npm install --global sanity@latest
+```
+
+2. Login with your github account in the sanity CLI. (Github account associated with the sanity studio):
+```bash
+$ sanity login
+...
+  Google
+> GitHub
+  E-mail / password
+```
+
+3. Deploy it live with the npm CLI command:
+```bash
+npm run deploy
+```
+
+## Odd behaviour
+If you publish data changes the studio will react with a *unknown field not found* error or similar. This usually means that you have not deployed the code changes (refer to section above).
+
 
 ## Contact
 Johnny Bjånesøy
