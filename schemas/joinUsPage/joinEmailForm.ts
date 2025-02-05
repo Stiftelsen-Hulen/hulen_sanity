@@ -6,7 +6,7 @@ export default {
   name: 'joinEmailForm',
   fields: [
     {
-      type: 'email',
+      type: 'string',
       name: 'destinationEmailAddress',
       validation: (rule: Rule) => rule.required(),
     },
