@@ -7,7 +7,7 @@ export default {
   fieldsets: [{ name: 'joinFormLabels', title: 'Email Form\'s Input Labels' }],
   fields: [
     {
-      type: 'string',
+      type: 'localeString',
       name: 'emailFormTitle',
       validation: (rule: Rule) => rule.required(),
     },
