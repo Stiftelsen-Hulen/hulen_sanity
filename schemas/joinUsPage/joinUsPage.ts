@@ -57,5 +57,12 @@ export default {
       title: 'Benefits Section',
       validation: (rule: Rule) => rule.required(),
     },
+    {
+      type: 'joinEmailForm',
+      name: 'joinEmailForm',
+      title: 'Join Us Email Form',
+      description: 'Email form to apply for positions at Hulen',
+      validation: (rule: Rule) => rule.required(),
+    },
   ],
 }
