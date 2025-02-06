@@ -1,5 +1,5 @@
 # hulen_sanity
-Hulen studio contains the backend for [Hulen](hulen.no) made with Sanity.io with TypeScript which delivers and manages content for the frontend application in a separate repository (found [here](https://github.com/Daedalusish/hulen_frontend)).
+Hulen studio contains the backend for [Hulen](hulen.no) made with Sanity.io with TypeScript which delivers and manages content for the frontend application in a separate repository (found [here]([https://github.com/Daedalusish/hulen_frontend](https://github.com/Stiftelsen-Hulen/hulen_frontend))).
 
 ## Getting Started
 
@@ -86,4 +86,10 @@ If you publish data changes the studio will react with a *unknown field not foun
 
 
 ## Contact
-Johnny Bjånesøy
+Maintained by:
+* Nikolai Hansen Gangstø
+* Erik Grunnaleite Ingebrigtsen
+* Halvor Brunt
+
+First developed by;
+* Johnny Bjånesøy
