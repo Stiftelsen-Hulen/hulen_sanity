@@ -17,6 +17,7 @@ import techInfo from './techInfo/techInfo'
 import translationObjects from './translationObject/translationObject'
 import guardianInfo from './guardianInfo/guardianInfo'
 import joinEmailForm from './joinUsPage/joinEmailForm'
+import joinEmailFormApi from './api/contactFormApi'
 
 export const schemaTypes = [
   navBar,
@@ -29,6 +30,7 @@ export const schemaTypes = [
   positionEl,
   benefitsSection,
   joinEmailForm,
+  joinEmailFormApi,
   joinSection,
   joinUsPage,
   positionType,

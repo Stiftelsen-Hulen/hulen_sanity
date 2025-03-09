@@ -6,11 +6,6 @@ export default {
   name: 'joinEmailForm',
   fields: [
     {
-      type: 'string',
-      name: 'destinationEmailAddress',
-      validation: (rule: Rule) => rule.required(),
-    },
-    {
       type: 'localeString',
       name: 'emailFormTitle',
       validation: (rule: Rule) => rule.required(),
